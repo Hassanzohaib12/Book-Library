@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help 4 Swat - Book Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🤝 Help 4 Swat</h1>
+    <p>Support projects in KPK</p>
+    <button id="createBtn">+ Create Project</button>
+  </header>
+
+  <main id="projectsContainer">
+    <!-- Projects will show here -->
+  </main>
+
+  <!-- Project Form Popup -->
+  <div id="projectForm" class="popup hidden">
+    <h2>Create New Project</h2>
+    <input type="text" id="title" placeholder="Project Title">
+    <textarea id="desc" placeholder="Project Description"></textarea>
+    <input type="number" id="goal" placeholder="Funding Goal Rs.">
+    <button id="submitProject">Submit Project</button>
+    <button id="closeForm">Cancel</button>
+  </div>
+
+  <!-- Donate Popup -->
+  <div id="donateForm" class="popup hidden">
+    <h2>Donate</h2>
+    <input type="number" id="donateAmount" placeholder="Enter Amount Rs.">
+    <button id="submitDonate">Donate Now</button>
+    <button id="closeDonate">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
